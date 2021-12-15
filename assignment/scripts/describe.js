@@ -26,10 +26,10 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// The variable "number" is created and assigned a value of 1
-// The variable "number" is incremented by 1. The value is now 2
-// A conditional is requested to see if variable "number" is greater than or equal to 2
-// Console log reports "yes" since "number" is equal to 2, thus satisfying the condition
+// Variable "name" is created and assigned a string value: "Dane"
+// Conditional is requested to see if "name" variable (Dane) exactly matches "Mary"
+// The first action is skipped as the condition is not met, nothing is logged
+// The "else" condition is executed, resulting in the log "How do you do?" to display
 
 //CODE
 /*
@@ -45,10 +45,14 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// Variable "name" is created and assigned a string value: "Dane"
-// Conditional is requested to see if "name" variable (Dane) exactly matches "Mary"
-// The first action is skipped as the condition is not met, nothing is logged
-// The "else" condition is executed, resulting in the log "How do you do?" to display
+// Variable "secret" created with no value
+// Variable "code" is assigned value: 123
+// Conditional is created to see if code matches exactly "123". Since it matches, the code block is executed
+// Variable "secret" is assigned string value: "super"
+// Variable "code" also assigned new value: 246
+// Conditional checks to see if "code" is greater than 250
+// Condition is not met since 246 is not greater than 250, code block is not executed
+// Console log displays "super"
 
 //CODE
 /*
@@ -70,14 +74,13 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// Variable "secret" created with no value
-// Variable "code" is assigned value: 123
-// Conditional is created to see if code matches exactly "123". Since it matches, the code block is executed
-// Variable "secret" is assigned string value: "super"
-// Variable "code" also assigned new value: 246
-// Conditional checks to see if "code" is greater than 250
-// Condition is not met since 246 is not greater than 250, code block is not executed
-// Console log displays "super"
+// Variables 'isStudent', 'age', and 'zip' are assigned values
+// 1st condition checks if you are a student AND if zip is greater than 80000
+// both conditions are not met so we move down the stack
+// 2nd condition checks if we are not a student OR under 30
+// Neither condition is met so we move down the stack
+// 3rd condition checks only if we are a isStudent
+// Condition is met and console logs "Welcome to Prime"
 
 //CODE
 /*
@@ -154,7 +157,8 @@ if (mix === true) {
 let temp = 40;
 const time = 4;
 
-// FIX - condition should be an 'and' statement (&&), not or (||)
+// FIX - condition should be an 'and' statement (&&), not or (||) since we only
+// want the code block to execute if both conditions are met
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -168,7 +172,8 @@ if (temp > 39 || time >= 4) {
 let age = 21;
 const minAge = 21;
 
-// FIX - Condition is incorrect, it should read: if(age < minAge) {
+// FIX - Condition is incorrect. The current condition will display "no entry" if age >= minAge.
+// We only want to display "no entry" if age < minAge. The if and else logs should be swapped.
 if(minAge <= age) {
   console.log('no entry');
 } else {
